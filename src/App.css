@@ -1,4 +1,7 @@
+* {
+    margin: 0;
+}
+
 .App {
-    background-color: #111;
-    height: 100vh;
+    background-color: #111; 
 }

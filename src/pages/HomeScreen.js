@@ -2,7 +2,7 @@ import React from 'react';
 import './HomeScreen.css';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
-import Row from '../components/Row';
+import Row from '../components/Row/Row';
 import requests from "../utilities/requests";
 
 function HomeScreen() {
@@ -16,11 +16,11 @@ function HomeScreen() {
                 isLargeRow
             />
             <Row title = "Trending Now" fetchUrl = {requests.fetchTrending}/>
-            <Row title = "Trending Now" fetchUrl = {requests.fetchTopRated}/>
-            <Row title = "Trending Now" fetchUrl = {requests.fetchActionMovies}/>
-            <Row title = "Trending Now" fetchUrl = {requests.fetchComedyMovies}/>
-            <Row title = "Trending Now" fetchUrl = {requests.fetchHorrorMovies}/>
-            <Row title = "Trending Now" fetchUrl = {requests.fetchDocumentaries}/>
+            <Row title = "Top Rated" fetchUrl = {requests.fetchTopRated}/>
+            <Row title = "Action Movies" fetchUrl = {requests.fetchActionMovies}/>
+            <Row title = "Comedy Movies" fetchUrl = {requests.fetchComedyMovies}/>
+            <Row title = "Horror Movies" fetchUrl = {requests.fetchHorrorMovies}/>
+            <Row title = "Documentaries" fetchUrl = {requests.fetchDocumentaries}/>
         </div>
     )
 }
