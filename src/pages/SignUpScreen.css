@@ -44,3 +44,8 @@
 .signUpScreen_gray {
     color: gray;
 }
+
+.signUpScreen_link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
