@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import HomeScreen from './pages/HomeScreen';
 import Login from './pages/Login';
+import ProfileScreen from './pages/ProfileScreen'
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom" 
 import { auth } from './firebase';
@@ -24,12 +25,12 @@ function App() {
           }))
         } else {
           //logged out
-          dispatch(logout);
+          dispatch(logout());
         }
       })
 
       return unsubscribe;
-  }, []);
+  }, [dispatch]);
   
   return (
     <div className="App">
@@ -43,6 +44,10 @@ function App() {
             <Route exact path = "/">
               <HomeScreen />
             </Route>
+            <Route>
+              <ProfileScreen path = "/profile"/>
+            </Route>
+            
           </Switch>
         )}
       </Router>
