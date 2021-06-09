@@ -50,3 +50,12 @@
     border: none;
     cursor: pointer;
 }
+
+.profileScreen_plans{
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 10px;
+}
+
+.profileScreen_plans {
+    margin-top: 20px;
+}
