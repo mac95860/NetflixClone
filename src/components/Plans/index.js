@@ -48,7 +48,8 @@ function Plans() {
             }
 
             if (sessionId) {
-                const stripe = await loadStripe()
+                const stripe = await loadStripe('pk_test_51Hxz9XLEq0ZvTanT8yRhuBnsepLU0rqmf5LGSImsratiZlCs3pTysWthVt6E9WDWyWNcI00fueSIBAWqWYZEuE4e00Y8KWHMmJ')
+                stripe.redirectToCheckout({ sessionId })
             }
         })
     }
