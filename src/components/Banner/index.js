@@ -17,9 +17,7 @@ function Banner() {
             return request
         }
         fetchData()
-    }, [])
-
-    console.log(movie)
+    }, []);
 
         // n is the number of characters
     function truncate(string, n) {
